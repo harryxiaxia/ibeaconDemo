@@ -1,0 +1,44 @@
+# Version: 7.2.0.2 (58c3efa)
+# [first argument, ignore] # /Users/WeiLoveLisha/Projects/EstimoteBeaconProj/EstimoteBeaconProj/bin/iPhone/Release/mtouch.exe
+/Developer/MonoTouch/usr/bin/mtouch \
+	-sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--cache \
+	/Users/WeiLoveLisha/Projects/EstimoteBeaconProj/EstimoteBeaconProj/obj/iPhone/Release/mtouch-cache \
+	--nomanifest \
+	--nosign \
+	-dev \
+	/Users/WeiLoveLisha/Projects/EstimoteBeaconProj/EstimoteBeaconProj/bin/iPhone/Release/EstimoteBeaconProj.app \
+	-r \
+	/Users/WeiLoveLisha/Downloads/Xamarin-EstimoteBeacons-master/EstimoteXamarin/EstimoteXamarin/bin/Release/EstimoteXamarin.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.Xml.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.Core.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/monotouch.dll \
+	-r \
+	/Users/WeiLoveLisha/Projects/EstimoteBeaconProj/EstimoteBeaconProj/FlyoutNavigation.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/MonoTouch.Dialog-1.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.Net.Http.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.Xml.Linq.dll \
+	-r \
+	/Users/WeiLoveLisha/Downloads/SQLite.dll \
+	-r \
+	/Users/WeiLoveLisha/Projects/EstimoteBeaconProj/Components/json.net-4.5.11/lib/ios/Newtonsoft.Json.dll \
+	-r \
+	/Users/WeiLoveLisha/Projects/EstimoteBeaconProj/Components/btprogresshud-1.7/lib/ios/BTProgressHUD.dll \
+	-r \
+	/Users/WeiLoveLisha/Projects/EstimoteBeaconProj/Components/sdsegmentedcontrol-2.0/lib/ios/SegmentedControl.dll \
+	-linksdkonly \
+	-sdk \
+	7.0 \
+	-targetver \
+	7.0 \
+	--abi=armv7 \
+	/Users/WeiLoveLisha/Projects/EstimoteBeaconProj/EstimoteBeaconProj/bin/iPhone/Release/EstimoteBeaconProj.exe \

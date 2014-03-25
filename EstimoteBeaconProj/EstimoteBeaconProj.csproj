@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{83627CCC-A44E-41E2-A30F-F04753D322DB}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>EstimoteBeaconProj</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>EstimoteBeaconProj</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <BuildIpa>true</BuildIpa>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="FlyoutNavigation">
+      <HintPath>FlyoutNavigation.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoTouch.Dialog-1" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="SQLite">
+      <HintPath>..\..\..\Downloads\SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Components\json.net-4.5.11\lib\ios\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="BTProgressHUD">
+      <HintPath>..\Components\btprogresshud-1.7\lib\ios\BTProgressHUD.dll</HintPath>
+    </Reference>
+    <Reference Include="SegmentedControl">
+      <HintPath>..\Components\sdsegmentedcontrol-2.0\lib\ios\SegmentedControl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Welcome.png" />
+    <BundleResource Include="Resources\Default-Landscape.png" />
+    <BundleResource Include="Resources\Default-Landscape%402x.png" />
+    <BundleResource Include="Resources\Default-Portrait.png" />
+    <BundleResource Include="Resources\Default-Portrait%402x.png" />
+    <BundleResource Include="Resources\Icon-60.png" />
+    <BundleResource Include="Resources\Icon-60%402x.png" />
+    <BundleResource Include="Resources\Icon-76.png" />
+    <BundleResource Include="Resources\Icon-76%402x.png" />
+    <BundleResource Include="Resources\Icon-Small-40.png" />
+    <BundleResource Include="Resources\Icon-Small-40%402x.png" />
+    <BundleResource Include="Resources\Icon-Small.png" />
+    <BundleResource Include="Resources\Icon-Small%402x.png" />
+    <BundleResource Include="Resources\circle.png" />
+    <BundleResource Include="Resources\coursebackgrd_blur.jpg" />
+    <BundleResource Include="Resources\labbackgrd_blur.jpg" />
+    <BundleResource Include="Resources\time.png" />
+    <BundleResource Include="Resources\Data\Faculty.sqlite" />
+    <BundleResource Include="Resources\Data\People.sqlite" />
+    <BundleResource Include="Resources\Fonts\Gotham-Bold.otf" />
+    <BundleResource Include="Resources\Fonts\Gotham-Book.otf" />
+    <BundleResource Include="Resources\Fonts\Gotham-Light.otf" />
+    <BundleResource Include="Resources\images\0cta.png" />
+    <BundleResource Include="Resources\images\1cta.png" />
+    <BundleResource Include="Resources\images\2cta.png" />
+    <BundleResource Include="Resources\images\course_schedule.png" />
+    <BundleResource Include="Resources\images\faculty_placeholder.png" />
+    <BundleResource Include="Resources\images\iOS_Background_iPad%402x.png" />
+    <BundleResource Include="Resources\images\lab100.png" />
+    <BundleResource Include="Resources\images\lab20.png" />
+    <BundleResource Include="Resources\images\lab40.png" />
+    <BundleResource Include="Resources\images\lab60.png" />
+    <BundleResource Include="Resources\images\menu-icon%402x.png" />
+    <BundleResource Include="Resources\images\star.png" />
+    <BundleResource Include="Resources\images\star_unselect.png" />
+    <BundleResource Include="Resources\images\star_unselected.png" />
+    <BundleResource Include="Resources\images\tab icons\icnCourses.png" />
+    <BundleResource Include="Resources\images\tab icons\icnCourses%402x.png" />
+    <BundleResource Include="Resources\images\tab icons\icnEvents.png" />
+    <BundleResource Include="Resources\images\tab icons\icnEvents%402x.png" />
+    <BundleResource Include="Resources\images\tab icons\icnHome.png" />
+    <BundleResource Include="Resources\images\tab icons\icnHome%402x.png" />
+    <BundleResource Include="Resources\images\tab icons\icnLabs.png" />
+    <BundleResource Include="Resources\images\tab icons\icnLabs%402x.png" />
+    <BundleResource Include="Resources\images\tab icons\icnPeople.png" />
+    <BundleResource Include="Resources\images\tab icons\icnPeople%402x.png" />
+    <BundleResource Include="Resources\images\tab icons\icnVideos.png" />
+    <BundleResource Include="Resources\images\tab icons\icnVideos%402x.png" />
+    <BundleResource Include="Resources\images\tab icons\train.png" />
+    <BundleResource Include="Resources\images\tab icons\train%402x.png" />
+    <BundleResource Include="Resources\Gotham-Bold.otf" />
+    <BundleResource Include="Resources\Gotham-Book.otf" />
+    <BundleResource Include="Resources\Gotham-Light.otf" />
+    <BundleResource Include="Resources\far_image.PNG" />
+    <BundleResource Include="Resources\immediate_image.PNG" />
+    <BundleResource Include="Resources\unknown_image.PNG" />
+    <BundleResource Include="Resources\near_image.PNG" />
+    <BundleResource Include="Resources\purpleBeacon.PNG" />
+    <BundleResource Include="Resources\greenBeacon.PNG" />
+    <BundleResource Include="Resources\blueBeacon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="FlyoutNavigation.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="EstimoteBeaconProjViewController.cs" />
+    <Compile Include="EstimoteBeaconProjViewController.designer.cs">
+      <DependentUpon>EstimoteBeaconProjViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EstimoteProximity\EstimoteProximityController.cs" />
+    <Compile Include="EstimoteProximity\EstimoteProximityController.designer.cs">
+      <DependentUpon>EstimoteProximityController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data Layer\CDMService.cs" />
+    <Compile Include="Data Layer\CTATracker.cs" />
+    <Compile Include="Data Layer\DataAccessHelper.cs" />
+    <Compile Include="Data Layer\LabDataRepository.cs" />
+    <Compile Include="Data Layer\SQLiteManagement.cs" />
+    <Compile Include="Data Layer\Model\CTATrain.cs" />
+    <Compile Include="Data Layer\Model\Course.cs" />
+    <Compile Include="Data Layer\Model\CourseSchedule.cs" />
+    <Compile Include="Data Layer\Model\CourseSection.cs" />
+    <Compile Include="Data Layer\Model\Event.cs" />
+    <Compile Include="Data Layer\Model\Faculty.cs" />
+    <Compile Include="Data Layer\Model\FacultyCourse.cs" />
+    <Compile Include="Data Layer\Model\FacultyHour.cs" />
+    <Compile Include="Data Layer\Model\JsonMetaData.cs" />
+    <Compile Include="Data Layer\Model\Lab.cs" />
+    <Compile Include="Data Layer\Model\People.cs" />
+    <Compile Include="Data Layer\Model\Quarter.cs" />
+    <Compile Include="Data Layer\Model\Subject.cs" />
+    <Compile Include="Data Layer\Model\VimeoVideo.cs" />
+    <Compile Include="Util\DeviceDetection.cs" />
+    <Compile Include="Util\EventSingleton.cs" />
+    <Compile Include="Util\Reachability.cs" />
+    <Compile Include="Util\ScheduleQuarterNotification.cs" />
+    <Compile Include="Events\EventCell.cs" />
+    <Compile Include="Events\EventCell.designer.cs" />
+    <Compile Include="Events\EventDetailViewController.cs" />
+    <Compile Include="Events\EventDetailViewController.designer.cs" />
+    <Compile Include="Events\EventListViewController_iPhone.cs" />
+    <Compile Include="Events\EventListViewController_iPhone.designer.cs" />
+    <Compile Include="Events\EventsTableViewSource.cs" />
+    <Compile Include="Labs\LabDetailViewController.cs" />
+    <Compile Include="Labs\LabDetailViewController.designer.cs" />
+    <Compile Include="Labs\LabsTableViewDataSource.cs" />
+    <Compile Include="Labs\LabsViewController.cs" />
+    <Compile Include="Labs\LabsViewController.designer.cs" />
+    <Compile Include="Events\AddToCalendar.cs" />
+    <Compile Include="Events\EventPopoverViewContent.cs" />
+    <Compile Include="Events\EventPopoverViewContent.designer.cs" />
+    <Compile Include="FindPeer\Program.cs" />
+    <Compile Include="EstomitesScan\ProximityDemoViewController.cs" />
+    <Compile Include="EstomitesScan\ProximityDemoViewController.designer.cs" />
+    <Compile Include="EstomitesScan\BeaconScanGuide.cs" />
+    <Compile Include="EstomitesScan\BeaconScanGuide.designer.cs">
+      <DependentUpon>BeaconScanGuide.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="EstimoteBeaconProjViewController.xib" />
+    <InterfaceDefinition Include="EstimoteProximity\EstimoteProximityController.xib" />
+    <InterfaceDefinition Include="Events\EventCell.xib" />
+    <InterfaceDefinition Include="Events\EventDetailViewController.xib" />
+    <InterfaceDefinition Include="Events\EventListViewController_iPhone.xib" />
+    <InterfaceDefinition Include="Labs\LabDetailViewController.xib" />
+    <InterfaceDefinition Include="Labs\LabsViewController_iPhone.xib" />
+    <InterfaceDefinition Include="Events\EventPopoverViewContent.xib" />
+    <InterfaceDefinition Include="EstomitesScan\ProximityDemoViewController.xib" />
+    <InterfaceDefinition Include="EstomitesScan\BeaconScanGuide.xib" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Downloads\Xamarin-EstimoteBeacons-master\EstimoteXamarin\EstimoteXamarin\EstimoteXamarin.csproj">
+      <Project>{96D4FC7B-3452-43B1-87B5-775AB94BF6BB}</Project>
+      <Name>EstimoteXamarin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Labs\" />
+    <Folder Include="Events\" />
+    <Folder Include="FindPeer\" />
+    <Folder Include="EstomitesScan\" />
+    <Folder Include="EstimoteProximity\" />
+    <Folder Include="Data Layer\" />
+    <Folder Include="Util\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="json.net">
+      <Version>4.5.11</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="btprogresshud">
+      <Version>1.7</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="sdsegmentedcontrol">
+      <Version>2.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+</Project>

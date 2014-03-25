@@ -1,0 +1,14 @@
+mscorlib.dll
+System.dll
+System.Core.dll
+System.Xml.dll
+FlyoutNavigation.dll
+MonoTouch.Dialog-1.dll
+System.Json.dll
+EstimoteXamarin.dll
+System.Net.Http.dll
+Newtonsoft.Json.dll
+System.Runtime.Serialization.dll
+System.Xml.Linq.dll
+SQLite.dll
+BTProgressHUD.dll

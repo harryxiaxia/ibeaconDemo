@@ -1,0 +1,25 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina.7.0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="EstimoteBeaconProj/Events/EventListViewController_iPhone.cs">
+    <Files>
+      <File FileName="EstimoteBeaconProj/Labs/LabsViewController.cs" Line="142" Column="43" />
+      <File FileName="EstimoteBeaconProj/Events/EventListViewController_iPhone.cs" Line="104" Column="25" />
+      <File FileName="EstimoteBeaconProj/EstimoteProximity/EstimoteProximityController.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="EstimoteBeaconProj" expanded="True">
+            <Node name="Events" expanded="True" />
+            <Node name="FindPeer" selected="True" />
+            <Node name="Labs" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26A524D60000000000000000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A3631740000000000000000 /* UIKit.framework */; };
+		83AC80900000000000000000 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCBD4A700000000000000000 /* MapKit.framework */; };
+		1D6E30A10000000000000000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FF3D3F0000000000000000 /* Foundation.framework */; };
+		10D912EA0000000000000000 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146A1F880000000000000000 /* CoreGraphics.framework */; };
+		F03766600000000000000000 /* Welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 129483040000000000000000 /* Welcome.png */; };
+		2436DEFE0000000000000000 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C7EB9C0000000000000000 /* Default-Landscape.png */; };
+		12619FE80000000000000000 /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15F2AC860000000000000000 /* Default-Landscape@2x.png */; };
+		8C60D2000000000000000000 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 41D6D7000000000000000000 /* Default-Portrait.png */; };
+		1CE1E2A60000000000000000 /* Default-Portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2072EF440000000000000000 /* Default-Portrait@2x.png */; };
+		23D118C60000000000000000 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 276225640000000000000000 /* Icon-60.png */; };
+		11FBD9B00000000000000000 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 158CE64E0000000000000000 /* Icon-60@2x.png */; };
+		269A9A000000000000000000 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B7A73800000000000000000 /* Icon-76.png */; };
+		2E515B840000000000000000 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31E268220000000000000000 /* Icon-76@2x.png */; };
+		38D19E420000000000000000 /* Icon-Small-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C62AAE00000000000000000 /* Icon-Small-40.png */; };
+		26FC5F2C0000000000000000 /* Icon-Small-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A8D6BCA0000000000000000 /* Icon-Small-40@2x.png */; };
+		152720160000000000000000 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B82CB40000000000000000 /* Icon-Small.png */; };
+		23386F720000000000000000 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26C97C100000000000000000 /* Icon-Small@2x.png */; };
+		3149BECE0000000000000000 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 34DACB6C0000000000000000 /* circle.png */; };
+		1F747FB80000000000000000 /* coursebackgrd_blur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23058C560000000000000000 /* coursebackgrd_blur.jpg */; };
+		D9F40A200000000000000000 /* labbackgrd_blur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11304D400000000000000000 /* labbackgrd_blur.jpg */; };
+		3BCA018C0000000000000000 /* time.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F5B0E2A0000000000000000 /* time.png */; };
+		29C1DF5A0000000000000000 /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D52EBF80000000000000000 /* Gotham-Bold.otf */; };
+		17ECA0440000000000000000 /* Gotham-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1B7DACE20000000000000000 /* Gotham-Book.otf */; };
+		617612E00000000000000000 /* Gotham-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9A86DCC00000000000000000 /* Gotham-Light.otf */; };
+		344222180000000000000000 /* far_image.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 37D32EB60000000000000000 /* far_image.PNG */; };
+		226CE3020000000000000000 /* immediate_image.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 25FDEFA00000000000000000 /* immediate_image.PNG */; };
+		1097A3EC0000000000000000 /* unknown_image.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 1428B08A0000000000000000 /* unknown_image.PNG */; };
+		3EC264D60000000000000000 /* near_image.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 253717400000000000000000 /* near_image.PNG */; };
+		2CED25C00000000000000000 /* purpleBeacon.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 307E325E0000000000000000 /* purpleBeacon.PNG */; };
+		1B17E6AA0000000000000000 /* greenBeacon.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 1EA8F3480000000000000000 /* greenBeacon.PNG */; };
+		942A79400000000000000000 /* blueBeacon.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CD3B43200000000000000000 /* blueBeacon.PNG */; };
+		376D687E0000000000000000 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AFE751C0000000000000000 /* Info.plist */; };
+		11AE0F590000000000000000 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 153F1BF70000000000000000 /* Entitlements.plist */; };
+		336F9C500000000000000000 /* EstimoteBeaconProjViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C8066300000000000000000 /* EstimoteBeaconProjViewController.xib */; };
+		2A0CBE570000000000000000 /* EstimoteProximityController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D9DCAF50000000000000000 /* EstimoteProximityController.xib */; };
+		1B95A8C30000000000000000 /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F26B5610000000000000000 /* EventCell.xib */; };
+		399A3F580000000000000000 /* EventDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2B4BF60000000000000000 /* EventDetailViewController.xib */; };
+		1E8E0C0D0000000000000000 /* EventListViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 221F18AB0000000000000000 /* EventListViewController_iPhone.xib */; };
+		3FF0CC240000000000000000 /* LabDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 381D8C200000000000000000 /* LabDetailViewController.xib */; };
+		21866F570000000000000000 /* LabsViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25177BF50000000000000000 /* LabsViewController_iPhone.xib */; };
+		6AD1F2800000000000000000 /* EventPopoverViewContent.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3E2BC600000000000000000 /* EventPopoverViewContent.xib */; };
+		3BC716320000000000000000 /* ProximityDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F5822D00000000000000000 /* ProximityDemoViewController.xib */; };
+		19CBACC70000000000000000 /* BeaconScanGuide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D5CB9650000000000000000 /* BeaconScanGuide.xib */; };
+		1276B06F0000000000000000 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 1607BD0D0000000000000000 /* AppDelegate.h */; };
+		29592DC80000000000000000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEA3A660000000000000000 /* AppDelegate.m */; };
+		1CC410110000000000000000 /* EstimoteBeaconProjViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 20551CAF0000000000000000 /* EstimoteBeaconProjViewController.h */; };
+		C9DE5BC00000000000000000 /* EstimoteBeaconProjViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 102EF25A0000000000000000 /* EstimoteBeaconProjViewController.m */; };
+		ABBEDDF00000000000000000 /* EstimoteProximityController.h in Sources */ = {isa = PBXBuildFile; fileRef = E4CFA7D00000000000000000 /* EstimoteProximityController.h */; };
+		3373AA4E0000000000000000 /* EstimoteProximityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3704B6EC0000000000000000 /* EstimoteProximityController.m */; };
+		38B3CBAD0000000000000000 /* EventCell.h in Sources */ = {isa = PBXBuildFile; fileRef = 3C44D84B0000000000000000 /* EventCell.h */; };
+		3340C7320000000000000000 /* EventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D1D3D00000000000000000 /* EventCell.m */; };
+		132755A40000000000000000 /* LabDetailViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 16B862420000000000000000 /* LabDetailViewController.h */; };
+		16857F260000000000000000 /* LabDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A168BC40000000000000000 /* LabDetailViewController.m */; };
+		9F0616F00000000000000000 /* EventDetailViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = D816E0D00000000000000000 /* EventDetailViewController.h */; };
+		3D5B43B80000000000000000 /* EventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5056000000000000000000 /* EventDetailViewController.m */; };
+		19B0C58C0000000000000000 /* EventListViewController_iPhone.h in Sources */ = {isa = PBXBuildFile; fileRef = 1D41D22A0000000000000000 /* EventListViewController_iPhone.h */; };
+		2B5321860000000000000000 /* EventListViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE42E240000000000000000 /* EventListViewController_iPhone.m */; };
+		2D0236470000000000000000 /* LabsViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 309342E50000000000000000 /* LabsViewController.h */; };
+		23FE252E0000000000000000 /* LabsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 278F31CC0000000000000000 /* LabsViewController.m */; };
+		3E4B3A000000000000000000 /* EventPopoverViewContent.h in Sources */ = {isa = PBXBuildFile; fileRef = 775C03E00000000000000000 /* EventPopoverViewContent.h */; };
+		38FEAAAA0000000000000000 /* EventPopoverViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8FB7480000000000000000 /* EventPopoverViewContent.m */; };
+		254773B70000000000000000 /* ProximityDemoViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 28D880550000000000000000 /* ProximityDemoViewController.h */; };
+		36E9CFB10000000000000000 /* ProximityDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7ADC4F0000000000000000 /* ProximityDemoViewController.m */; };
+		1A616AC10000000000000000 /* BeaconScanGuide.h in Sources */ = {isa = PBXBuildFile; fileRef = 1DF2775F0000000000000000 /* BeaconScanGuide.h */; };
+		3D733F990000000000000000 /* BeaconScanGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 1044C3700000000000000000 /* BeaconScanGuide.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A445FE80000000000000000 /* EstimoteBeaconProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "EstimoteBeaconProj.app"; path = "EstimoteBeaconProj.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A3631740000000000000000 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "UIKit.framework"; path = "System/Library/Frameworks/UIKit.framework"; sourceTree = SDKROOT; };
+		BCBD4A700000000000000000 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MapKit.framework"; path = "System/Library/Frameworks/MapKit.framework"; sourceTree = SDKROOT; };
+		20FF3D3F0000000000000000 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Foundation.framework"; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; };
+		146A1F880000000000000000 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreGraphics.framework"; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = SDKROOT; };
+		129483040000000000000000 /* Welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Welcome.png"; path = "Welcome.png"; sourceTree = "<group>"; };
+		27C7EB9C0000000000000000 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape.png"; path = "Default-Landscape.png"; sourceTree = "<group>"; };
+		15F2AC860000000000000000 /* Default-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x.png"; path = "Default-Landscape@2x.png"; sourceTree = "<group>"; };
+		41D6D7000000000000000000 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait.png"; path = "Default-Portrait.png"; sourceTree = "<group>"; };
+		2072EF440000000000000000 /* Default-Portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait@2x.png"; path = "Default-Portrait@2x.png"; sourceTree = "<group>"; };
+		276225640000000000000000 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60.png"; path = "Icon-60.png"; sourceTree = "<group>"; };
+		158CE64E0000000000000000 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60@2x.png"; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		3B7A73800000000000000000 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-76.png"; path = "Icon-76.png"; sourceTree = "<group>"; };
+		31E268220000000000000000 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-76@2x.png"; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		3C62AAE00000000000000000 /* Icon-Small-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-40.png"; path = "Icon-Small-40.png"; sourceTree = "<group>"; };
+		2A8D6BCA0000000000000000 /* Icon-Small-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-40@2x.png"; path = "Icon-Small-40@2x.png"; sourceTree = "<group>"; };
+		18B82CB40000000000000000 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		26C97C100000000000000000 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		34DACB6C0000000000000000 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "circle.png"; path = "circle.png"; sourceTree = "<group>"; };
+		23058C560000000000000000 /* coursebackgrd_blur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "coursebackgrd_blur.jpg"; path = "coursebackgrd_blur.jpg"; sourceTree = "<group>"; };
+		11304D400000000000000000 /* labbackgrd_blur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "labbackgrd_blur.jpg"; path = "labbackgrd_blur.jpg"; sourceTree = "<group>"; };
+		3F5B0E2A0000000000000000 /* time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "time.png"; path = "time.png"; sourceTree = "<group>"; };
+		2D52EBF80000000000000000 /* Gotham-Bold.otf */ = {isa = PBXFileReference; name = "Gotham-Bold.otf"; path = "Gotham-Bold.otf"; sourceTree = "<group>"; };
+		1B7DACE20000000000000000 /* Gotham-Book.otf */ = {isa = PBXFileReference; name = "Gotham-Book.otf"; path = "Gotham-Book.otf"; sourceTree = "<group>"; };
+		9A86DCC00000000000000000 /* Gotham-Light.otf */ = {isa = PBXFileReference; name = "Gotham-Light.otf"; path = "Gotham-Light.otf"; sourceTree = "<group>"; };
+		37D32EB60000000000000000 /* far_image.PNG */ = {isa = PBXFileReference; name = "far_image.PNG"; path = "far_image.PNG"; sourceTree = "<group>"; };
+		25FDEFA00000000000000000 /* immediate_image.PNG */ = {isa = PBXFileReference; name = "immediate_image.PNG"; path = "immediate_image.PNG"; sourceTree = "<group>"; };
+		1428B08A0000000000000000 /* unknown_image.PNG */ = {isa = PBXFileReference; name = "unknown_image.PNG"; path = "unknown_image.PNG"; sourceTree = "<group>"; };
+		253717400000000000000000 /* near_image.PNG */ = {isa = PBXFileReference; name = "near_image.PNG"; path = "near_image.PNG"; sourceTree = "<group>"; };
+		307E325E0000000000000000 /* purpleBeacon.PNG */ = {isa = PBXFileReference; name = "purpleBeacon.PNG"; path = "purpleBeacon.PNG"; sourceTree = "<group>"; };
+		1EA8F3480000000000000000 /* greenBeacon.PNG */ = {isa = PBXFileReference; name = "greenBeacon.PNG"; path = "greenBeacon.PNG"; sourceTree = "<group>"; };
+		CD3B43200000000000000000 /* blueBeacon.PNG */ = {isa = PBXFileReference; name = "blueBeacon.PNG"; path = "blueBeacon.PNG"; sourceTree = "<group>"; };
+		3AFE751C0000000000000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info.plist"; path = "Info.plist"; sourceTree = "<group>"; };
+		153F1BF70000000000000000 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Entitlements.plist"; path = "Entitlements.plist"; sourceTree = "<group>"; };
+		6C8066300000000000000000 /* EstimoteBeaconProjViewController.xib */ = {isa = PBXFileReference; name = "EstimoteBeaconProjViewController.xib"; path = "EstimoteBeaconProjViewController.xib"; sourceTree = "<group>"; };
+		2D9DCAF50000000000000000 /* EstimoteProximityController.xib */ = {isa = PBXFileReference; name = "EstimoteProximityController.xib"; path = "EstimoteProximity/EstimoteProximityController.xib"; sourceTree = "<group>"; };
+		1F26B5610000000000000000 /* EventCell.xib */ = {isa = PBXFileReference; name = "EventCell.xib"; path = "Events/EventCell.xib"; sourceTree = "<group>"; };
+		3D2B4BF60000000000000000 /* EventDetailViewController.xib */ = {isa = PBXFileReference; name = "EventDetailViewController.xib"; path = "Events/EventDetailViewController.xib"; sourceTree = "<group>"; };
+		221F18AB0000000000000000 /* EventListViewController_iPhone.xib */ = {isa = PBXFileReference; name = "EventListViewController_iPhone.xib"; path = "Events/EventListViewController_iPhone.xib"; sourceTree = "<group>"; };
+		381D8C200000000000000000 /* LabDetailViewController.xib */ = {isa = PBXFileReference; name = "LabDetailViewController.xib"; path = "Labs/LabDetailViewController.xib"; sourceTree = "<group>"; };
+		25177BF50000000000000000 /* LabsViewController_iPhone.xib */ = {isa = PBXFileReference; name = "LabsViewController_iPhone.xib"; path = "Labs/LabsViewController_iPhone.xib"; sourceTree = "<group>"; };
+		A3E2BC600000000000000000 /* EventPopoverViewContent.xib */ = {isa = PBXFileReference; name = "EventPopoverViewContent.xib"; path = "Events/EventPopoverViewContent.xib"; sourceTree = "<group>"; };
+		3F5822D00000000000000000 /* ProximityDemoViewController.xib */ = {isa = PBXFileReference; name = "ProximityDemoViewController.xib"; path = "EstomitesScan/ProximityDemoViewController.xib"; sourceTree = "<group>"; };
+		1D5CB9650000000000000000 /* BeaconScanGuide.xib */ = {isa = PBXFileReference; name = "BeaconScanGuide.xib"; path = "EstomitesScan/BeaconScanGuide.xib"; sourceTree = "<group>"; };
+		1607BD0D0000000000000000 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AppDelegate.h"; path = "AppDelegate.h"; sourceTree = "<group>"; };
+		2CEA3A660000000000000000 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate.m"; path = "AppDelegate.m"; sourceTree = "<group>"; };
+		20551CAF0000000000000000 /* EstimoteBeaconProjViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "EstimoteBeaconProjViewController.h"; path = "EstimoteBeaconProjViewController.h"; sourceTree = "<group>"; };
+		102EF25A0000000000000000 /* EstimoteBeaconProjViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "EstimoteBeaconProjViewController.m"; path = "EstimoteBeaconProjViewController.m"; sourceTree = "<group>"; };
+		E4CFA7D00000000000000000 /* EstimoteProximityController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "EstimoteProximityController.h"; path = "EstimoteProximityController.h"; sourceTree = "<group>"; };
+		3704B6EC0000000000000000 /* EstimoteProximityController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "EstimoteProximityController.m"; path = "EstimoteProximityController.m"; sourceTree = "<group>"; };
+		3C44D84B0000000000000000 /* EventCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "EventCell.h"; path = "EventCell.h"; sourceTree = "<group>"; };
+		36D1D3D00000000000000000 /* EventCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "EventCell.m"; path = "EventCell.m"; sourceTree = "<group>"; };
+		16B862420000000000000000 /* LabDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "LabDetailViewController.h"; path = "LabDetailViewController.h"; sourceTree = "<group>"; };
+		1A168BC40000000000000000 /* LabDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "LabDetailViewController.m"; path = "LabDetailViewController.m"; sourceTree = "<group>"; };
+		D816E0D00000000000000000 /* EventDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "EventDetailViewController.h"; path = "EventDetailViewController.h"; sourceTree = "<group>"; };
+		EC5056000000000000000000 /* EventDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "EventDetailViewController.m"; path = "EventDetailViewController.m"; sourceTree = "<group>"; };
+		1D41D22A0000000000000000 /* EventListViewController_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "EventListViewController_iPhone.h"; path = "EventListViewController_iPhone.h"; sourceTree = "<group>"; };
+		2EE42E240000000000000000 /* EventListViewController_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "EventListViewController_iPhone.m"; path = "EventListViewController_iPhone.m"; sourceTree = "<group>"; };
+		309342E50000000000000000 /* LabsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "LabsViewController.h"; path = "LabsViewController.h"; sourceTree = "<group>"; };
+		278F31CC0000000000000000 /* LabsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "LabsViewController.m"; path = "LabsViewController.m"; sourceTree = "<group>"; };
+		775C03E00000000000000000 /* EventPopoverViewContent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "EventPopoverViewContent.h"; path = "EventPopoverViewContent.h"; sourceTree = "<group>"; };
+		3C8FB7480000000000000000 /* EventPopoverViewContent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "EventPopoverViewContent.m"; path = "EventPopoverViewContent.m"; sourceTree = "<group>"; };
+		28D880550000000000000000 /* ProximityDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ProximityDemoViewController.h"; path = "ProximityDemoViewController.h"; sourceTree = "<group>"; };
+		3A7ADC4F0000000000000000 /* ProximityDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ProximityDemoViewController.m"; path = "ProximityDemoViewController.m"; sourceTree = "<group>"; };
+		1DF2775F0000000000000000 /* BeaconScanGuide.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BeaconScanGuide.h"; path = "BeaconScanGuide.h"; sourceTree = "<group>"; };
+		1044C3700000000000000000 /* BeaconScanGuide.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "BeaconScanGuide.m"; path = "BeaconScanGuide.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FE98D400000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26A524D60000000000000000 /* UIKit.framework in Frameworks */,
+				83AC80900000000000000000 /* MapKit.framework in Frameworks */,
+				1D6E30A10000000000000000 /* Foundation.framework in Frameworks */,
+				10D912EA0000000000000000 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B1D17BE0000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				5C384D100000000000000000 /* EstimoteBeaconProj */,
+				3B105EF70000000000000000 /* Frameworks */,
+				2069F1E40000000000000000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2069F1E40000000000000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A445FE80000000000000000 /* EstimoteBeaconProj.app */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		3B105EF70000000000000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A3631740000000000000000 /* UIKit.framework */,
+				BCBD4A700000000000000000 /* MapKit.framework */,
+				20FF3D3F0000000000000000 /* Foundation.framework */,
+				146A1F880000000000000000 /* CoreGraphics.framework */,
+			);
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		5C384D100000000000000000 /* EstimoteBeaconProj */ = {
+			isa = PBXGroup;
+			children = (
+				1607BD0D0000000000000000 /* AppDelegate.h */,
+				1DF2775F0000000000000000 /* BeaconScanGuide.h */,
+				CD3B43200000000000000000 /* blueBeacon.PNG */,
+				34DACB6C0000000000000000 /* circle.png */,
+				23058C560000000000000000 /* coursebackgrd_blur.jpg */,
+				27C7EB9C0000000000000000 /* Default-Landscape.png */,
+				15F2AC860000000000000000 /* Default-Landscape@2x.png */,
+				41D6D7000000000000000000 /* Default-Portrait.png */,
+				2072EF440000000000000000 /* Default-Portrait@2x.png */,
+				153F1BF70000000000000000 /* Entitlements.plist */,
+				20551CAF0000000000000000 /* EstimoteBeaconProjViewController.h */,
+				6C8066300000000000000000 /* EstimoteBeaconProjViewController.xib */,
+				E4CFA7D00000000000000000 /* EstimoteProximityController.h */,
+				3C44D84B0000000000000000 /* EventCell.h */,
+				D816E0D00000000000000000 /* EventDetailViewController.h */,
+				1D41D22A0000000000000000 /* EventListViewController_iPhone.h */,
+				775C03E00000000000000000 /* EventPopoverViewContent.h */,
+				37D32EB60000000000000000 /* far_image.PNG */,
+				2D52EBF80000000000000000 /* Gotham-Bold.otf */,
+				1B7DACE20000000000000000 /* Gotham-Book.otf */,
+				9A86DCC00000000000000000 /* Gotham-Light.otf */,
+				1EA8F3480000000000000000 /* greenBeacon.PNG */,
+				276225640000000000000000 /* Icon-60.png */,
+				158CE64E0000000000000000 /* Icon-60@2x.png */,
+				3B7A73800000000000000000 /* Icon-76.png */,
+				31E268220000000000000000 /* Icon-76@2x.png */,
+				18B82CB40000000000000000 /* Icon-Small.png */,
+				26C97C100000000000000000 /* Icon-Small@2x.png */,
+				3C62AAE00000000000000000 /* Icon-Small-40.png */,
+				2A8D6BCA0000000000000000 /* Icon-Small-40@2x.png */,
+				25FDEFA00000000000000000 /* immediate_image.PNG */,
+				3AFE751C0000000000000000 /* Info.plist */,
+				11304D400000000000000000 /* labbackgrd_blur.jpg */,
+				16B862420000000000000000 /* LabDetailViewController.h */,
+				309342E50000000000000000 /* LabsViewController.h */,
+				253717400000000000000000 /* near_image.PNG */,
+				28D880550000000000000000 /* ProximityDemoViewController.h */,
+				307E325E0000000000000000 /* purpleBeacon.PNG */,
+				3F5B0E2A0000000000000000 /* time.png */,
+				1428B08A0000000000000000 /* unknown_image.PNG */,
+				129483040000000000000000 /* Welcome.png */,
+				1B29D0850000000000000000 /* EstimoteProximity */,
+				B36894C00000000000000000 /* EstomitesScan */,
+				836372000000000000000000 /* Events */,
+				25DCF65F0000000000000000 /* Labs */,
+				30901C390000000000000000 /* Supporting Files */,
+			);
+			name = "EstimoteBeaconProj";
+			sourceTree = "<group>";
+		};
+		1B29D0850000000000000000 /* EstimoteProximity */ = {
+			isa = PBXGroup;
+			children = (
+				2D9DCAF50000000000000000 /* EstimoteProximityController.xib */,
+			);
+			name = "EstimoteProximity";
+			sourceTree = "<group>";
+		};
+		836372000000000000000000 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				1F26B5610000000000000000 /* EventCell.xib */,
+				3D2B4BF60000000000000000 /* EventDetailViewController.xib */,
+				221F18AB0000000000000000 /* EventListViewController_iPhone.xib */,
+				A3E2BC600000000000000000 /* EventPopoverViewContent.xib */,
+			);
+			name = "Events";
+			sourceTree = "<group>";
+		};
+		25DCF65F0000000000000000 /* Labs */ = {
+			isa = PBXGroup;
+			children = (
+				381D8C200000000000000000 /* LabDetailViewController.xib */,
+				25177BF50000000000000000 /* LabsViewController_iPhone.xib */,
+			);
+			name = "Labs";
+			sourceTree = "<group>";
+		};
+		B36894C00000000000000000 /* EstomitesScan */ = {
+			isa = PBXGroup;
+			children = (
+				1D5CB9650000000000000000 /* BeaconScanGuide.xib */,
+				3F5822D00000000000000000 /* ProximityDemoViewController.xib */,
+			);
+			name = "EstomitesScan";
+			sourceTree = "<group>";
+		};
+		30901C390000000000000000 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CEA3A660000000000000000 /* AppDelegate.m */,
+				1044C3700000000000000000 /* BeaconScanGuide.m */,
+				102EF25A0000000000000000 /* EstimoteBeaconProjViewController.m */,
+				3704B6EC0000000000000000 /* EstimoteProximityController.m */,
+				36D1D3D00000000000000000 /* EventCell.m */,
+				EC5056000000000000000000 /* EventDetailViewController.m */,
+				2EE42E240000000000000000 /* EventListViewController_iPhone.m */,
+				3C8FB7480000000000000000 /* EventPopoverViewContent.m */,
+				1A168BC40000000000000000 /* LabDetailViewController.m */,
+				278F31CC0000000000000000 /* LabsViewController.m */,
+				3A7ADC4F0000000000000000 /* ProximityDemoViewController.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15B6CC0A0000000000000000 /* EstimoteBeaconProj */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 305D391D0000000000000000 /* Build configuration list for PBXNativeTarget "EstimoteBeaconProj" */;
+			buildPhases = (
+				D4832AA00000000000000000 /* Sources */,
+				2FE98D400000000000000000 /* Frameworks */,
+				37E5ACC20000000000000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EstimoteBeaconProj";
+			productName = "EstimoteBeaconProj";
+			productReference = 3A445FE80000000000000000 /* EstimoteBeaconProj.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3753FCB90000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = B03A63000000000000000000 /* Build configuration list for PBXProject "EstimoteBeaconProj" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2B1D17BE0000000000000000;
+			productRefGroup = 2069F1E40000000000000000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15B6CC0A0000000000000000 /* EstimoteBeaconProj */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37E5ACC20000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F03766600000000000000000 /* Welcome.png in Resources */,
+				2436DEFE0000000000000000 /* Default-Landscape.png in Resources */,
+				12619FE80000000000000000 /* Default-Landscape@2x.png in Resources */,
+				8C60D2000000000000000000 /* Default-Portrait.png in Resources */,
+				1CE1E2A60000000000000000 /* Default-Portrait@2x.png in Resources */,
+				23D118C60000000000000000 /* Icon-60.png in Resources */,
+				11FBD9B00000000000000000 /* Icon-60@2x.png in Resources */,
+				269A9A000000000000000000 /* Icon-76.png in Resources */,
+				2E515B840000000000000000 /* Icon-76@2x.png in Resources */,
+				38D19E420000000000000000 /* Icon-Small-40.png in Resources */,
+				26FC5F2C0000000000000000 /* Icon-Small-40@2x.png in Resources */,
+				152720160000000000000000 /* Icon-Small.png in Resources */,
+				23386F720000000000000000 /* Icon-Small@2x.png in Resources */,
+				3149BECE0000000000000000 /* circle.png in Resources */,
+				1F747FB80000000000000000 /* coursebackgrd_blur.jpg in Resources */,
+				D9F40A200000000000000000 /* labbackgrd_blur.jpg in Resources */,
+				3BCA018C0000000000000000 /* time.png in Resources */,
+				29C1DF5A0000000000000000 /* Gotham-Bold.otf in Resources */,
+				17ECA0440000000000000000 /* Gotham-Book.otf in Resources */,
+				617612E00000000000000000 /* Gotham-Light.otf in Resources */,
+				344222180000000000000000 /* far_image.PNG in Resources */,
+				226CE3020000000000000000 /* immediate_image.PNG in Resources */,
+				1097A3EC0000000000000000 /* unknown_image.PNG in Resources */,
+				3EC264D60000000000000000 /* near_image.PNG in Resources */,
+				2CED25C00000000000000000 /* purpleBeacon.PNG in Resources */,
+				1B17E6AA0000000000000000 /* greenBeacon.PNG in Resources */,
+				942A79400000000000000000 /* blueBeacon.PNG in Resources */,
+				376D687E0000000000000000 /* Info.plist in Resources */,
+				11AE0F590000000000000000 /* Entitlements.plist in Resources */,
+				336F9C500000000000000000 /* EstimoteBeaconProjViewController.xib in Resources */,
+				2A0CBE570000000000000000 /* EstimoteProximityController.xib in Resources */,
+				1B95A8C30000000000000000 /* EventCell.xib in Resources */,
+				399A3F580000000000000000 /* EventDetailViewController.xib in Resources */,
+				1E8E0C0D0000000000000000 /* EventListViewController_iPhone.xib in Resources */,
+				3FF0CC240000000000000000 /* LabDetailViewController.xib in Resources */,
+				21866F570000000000000000 /* LabsViewController_iPhone.xib in Resources */,
+				6AD1F2800000000000000000 /* EventPopoverViewContent.xib in Resources */,
+				3BC716320000000000000000 /* ProximityDemoViewController.xib in Resources */,
+				19CBACC70000000000000000 /* BeaconScanGuide.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4832AA00000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1276B06F0000000000000000 /* AppDelegate.h in Sources */,
+				29592DC80000000000000000 /* AppDelegate.m in Sources */,
+				1CC410110000000000000000 /* EstimoteBeaconProjViewController.h in Sources */,
+				C9DE5BC00000000000000000 /* EstimoteBeaconProjViewController.m in Sources */,
+				ABBEDDF00000000000000000 /* EstimoteProximityController.h in Sources */,
+				3373AA4E0000000000000000 /* EstimoteProximityController.m in Sources */,
+				38B3CBAD0000000000000000 /* EventCell.h in Sources */,
+				3340C7320000000000000000 /* EventCell.m in Sources */,
+				132755A40000000000000000 /* LabDetailViewController.h in Sources */,
+				16857F260000000000000000 /* LabDetailViewController.m in Sources */,
+				9F0616F00000000000000000 /* EventDetailViewController.h in Sources */,
+				3D5B43B80000000000000000 /* EventDetailViewController.m in Sources */,
+				19B0C58C0000000000000000 /* EventListViewController_iPhone.h in Sources */,
+				2B5321860000000000000000 /* EventListViewController_iPhone.m in Sources */,
+				2D0236470000000000000000 /* LabsViewController.h in Sources */,
+				23FE252E0000000000000000 /* LabsViewController.m in Sources */,
+				3E4B3A000000000000000000 /* EventPopoverViewContent.h in Sources */,
+				38FEAAAA0000000000000000 /* EventPopoverViewContent.m in Sources */,
+				254773B70000000000000000 /* ProximityDemoViewController.h in Sources */,
+				36E9CFB10000000000000000 /* ProximityDemoViewController.m in Sources */,
+				1A616AC10000000000000000 /* BeaconScanGuide.h in Sources */,
+				3D733F990000000000000000 /* BeaconScanGuide.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1864E4880000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+			};
+			name = MonoTouch;
+		};
+		1BF5F1260000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				PRODUCT_NAME = "EstimoteBeaconProj";
+				WRAPPER_EXTENSION = app;
+			};
+			name = MonoTouch;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B03A63000000000000000000 /* Build configuration list for PBXProject "EstimoteBeaconProj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1864E4880000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+		305D391D0000000000000000 /* Build configuration list for PBXNativeTarget "EstimoteBeaconProj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BF5F1260000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3753FCB90000000000000000 /* Project object */;
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventPopoverViewContent">
+            <connections>
+                <outlet property="addToCalendarBtn" destination="blz-hl-CYf" id="6sb-59-yJU"/>
+                <outlet property="eventDetailWebView" destination="40" id="49"/>
+                <outlet property="registerButton" destination="eG2-Iw-olZ" id="qg3-Lw-xtm"/>
+                <outlet property="shareButton" destination="uTw-n0-eqH" id="iz5-E3-MvI"/>
+                <outlet property="view" destination="2" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="center" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="598"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <webView contentMode="scaleAspectFill" allowsInlineMediaPlayback="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="449"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                </webView>
+                <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blz-hl-CYf">
+                    <rect key="frame" x="82" y="507" width="236" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.3921568627" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="b1X-fv-QHY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Add to Calendar">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eG2-Iw-olZ">
+                    <rect key="frame" x="82" y="457" width="236" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.3921568627" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="J8s-8z-ACL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Register">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTw-n0-eqH">
+                    <rect key="frame" x="82" y="557" width="236" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.3921568627" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="96e-qC-gSU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Share">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="uTw-n0-eqH" firstAttribute="top" secondItem="blz-hl-CYf" secondAttribute="bottom" constant="20" id="2gQ-Ij-wJM"/>
+                <constraint firstAttribute="bottom" secondItem="eG2-Iw-olZ" secondAttribute="bottom" constant="111" id="3E9-az-G3c"/>
+                <constraint firstItem="40" firstAttribute="top" secondItem="2" secondAttribute="top" id="DgR-Vx-WK5"/>
+                <constraint firstItem="eG2-Iw-olZ" firstAttribute="top" secondItem="40" secondAttribute="bottom" constant="8" symbolic="YES" id="FCi-t2-0ht"/>
+                <constraint firstItem="eG2-Iw-olZ" firstAttribute="leading" secondItem="blz-hl-CYf" secondAttribute="leading" id="NmM-Mu-DPq"/>
+                <constraint firstItem="blz-hl-CYf" firstAttribute="leading" secondItem="uTw-n0-eqH" secondAttribute="leading" id="Ox7-hS-eOI"/>
+                <constraint firstItem="40" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="Rca-lj-fsM"/>
+                <constraint firstItem="eG2-Iw-olZ" firstAttribute="centerX" secondItem="40" secondAttribute="centerX" id="j9g-mf-y33"/>
+                <constraint firstItem="blz-hl-CYf" firstAttribute="top" secondItem="eG2-Iw-olZ" secondAttribute="bottom" constant="20" id="lDw-NX-b5H"/>
+                <constraint firstItem="eG2-Iw-olZ" firstAttribute="trailing" secondItem="blz-hl-CYf" secondAttribute="trailing" id="lIV-hH-dMQ"/>
+                <constraint firstAttribute="centerX" secondItem="uTw-n0-eqH" secondAttribute="centerX" id="qwN-6A-xby"/>
+                <constraint firstItem="blz-hl-CYf" firstAttribute="trailing" secondItem="uTw-n0-eqH" secondAttribute="trailing" id="vek-6c-gNc"/>
+                <constraint firstItem="eG2-Iw-olZ" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="82" id="waS-hC-sMG"/>
+                <constraint firstAttribute="centerX" secondItem="blz-hl-CYf" secondAttribute="centerX" id="xY4-Zz-b8s"/>
+            </constraints>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
